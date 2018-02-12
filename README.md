@@ -5,9 +5,8 @@
 ## Main files
 
 Following are the files with their brief description:
-*
-    * loganalysis.py: This file implements the main logic of SQL queries and tries to answer the 3 main questions of the assignment from **news** database.
-    * result.txt: This file has the result from stdout when *loganalysis.py* file is run.
+* loganalysis.py: This file implements the main logic of SQL queries and tries to answer the 3 main questions of the assignment from **news** database.
+* result.txt: This file has the result from stdout when *loganalysis.py* file is run.
 
 
 ## Running the project.
