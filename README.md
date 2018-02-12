@@ -18,13 +18,8 @@ Following are the files with their brief description:
     * Enter the DB: `psql news`
     * We will need to create two views. This is required to answer the third question about error logs:
       
-          * `create view total_requests as                                                
-   select date(time) as date, count(*) as total
-   from log group by date;`
-          * `create view status_counts as                                                
-   select date(time) as date,status, count(*) as total
-   from log group by date,log.status;`
-
+          * `create view total_requests as select date(time) as date, count(*) as total from log group by date;`
+          * `create view status_counts as select date(time) as date,status, count(*) as total from log group by date,log.status;`
 
     * Exit the DB and run the python script: `python3 loganalysis.py`
 
