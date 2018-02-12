@@ -5,10 +5,10 @@
 ## Main files
 
 Following are the files with their brief description:
-<ul>
-    <li>loganalysis.py: This file implements the main logic of SQL queries and tries to answer the 3 main questions of the assignment from **news** database.</li>
-    <li>result.txt: This file has the result from stdout when *loganalysis.py* file is run.</li>
-</ul>
+*
+    * loganalysis.py: This file implements the main logic of SQL queries and tries to answer the 3 main questions of the assignment from **news** database.
+    * result.txt: This file has the result from stdout when *loganalysis.py* file is run.
+
 
 ## Running the project.
 * Spin up the virtual box: `vargant up`
@@ -18,8 +18,8 @@ Following are the files with their brief description:
     * Enter the DB: `psql news`
     * We will need to create two views. This is required to answer the third question about error logs:
       
-          * `create view total_requests as select date(time) as date, count(*) as total from log group by date;`
-          * `create view status_counts as select date(time) as date,status, count(*) as total from log group by date,log.status;`
+          * create view total_requests as select date(time) as date, count(*) as total from log group by date;
+          * create view status_counts as select date(time) as date,status, count(*) as total from log group by date,log.status;
 
     * Exit the DB and run the python script: `python3 loganalysis.py`
 
